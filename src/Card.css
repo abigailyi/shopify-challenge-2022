@@ -1,0 +1,90 @@
+:root {
+  --bg-color: #1b1b1b;
+  --card-color: rgba(229, 229, 229, 0.2);
+  --font: "Roboto", Helvetica, Arial, sans-serif;
+  --box-shadow: rgba(0, 0, 0, 0.4);
+}
+
+.Card {
+  margin: 0 auto;
+}
+
+.Card img {
+  width: 500px;
+  height: 300px;
+  border-radius: 20px;
+  margin: 10px auto;
+}
+
+.Card p {
+  width: 490px;
+  margin-left: 15px;
+  text-align: left;
+}
+
+.Card h2 {
+  text-align: left;
+  padding: 0;
+  margin-left: 15px;
+}
+
+.Card h3 {
+  font-size: 14px;
+  text-align: left;
+  padding: 0;
+  margin-left: 15px;
+}
+
+.Card .fa-heart {
+  color: #fff;
+  float: right;
+  margin-right: -470px;
+  margin-bottom: -20px;
+  padding: 0;
+}
+
+@media screen and (max-width: 812px) {
+  .Card {
+    margin: 0 auto;
+  }
+
+  .Card img {
+    width: 100%;
+    height: auto;
+    margin-top: 0px;
+  }
+
+  .Card p {
+    width: auto;
+  }
+
+  #copyright {
+    width: auto;
+    height: auto;
+    margin-left: 3px;
+    margin-top: 0px;
+    padding: 0;
+  }
+
+  #desc {
+    display: none;
+  }
+
+  .Card h2 {
+    margin-left: 3px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    font-size: 19px;
+  }
+
+  .Card h3 {
+    margin: 0 auto;
+    margin-left: 3px;
+  }
+
+  .Card .fa-heart {
+    float: right;
+    margin-right: 3px;
+    margin-top: 5px;
+  }
+}
