@@ -12,6 +12,8 @@ body {
   background-repeat: no-repeat;
   background-blend-mode: luminosity;
   margin: 0 auto;
+  color: #fff;
+  font-family: var(--font);
 }
 
 .App {

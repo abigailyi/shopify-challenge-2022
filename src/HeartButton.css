@@ -1,0 +1,9 @@
+.LikeButton img.heart-icon {
+  color: #fff;
+}
+
+.LikeButton {
+  display: flexbox;
+  float: right;
+  margin-right: 470px;
+}

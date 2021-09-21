@@ -2,19 +2,7 @@
   --bg-color: #1b1b1b;
   --card-color: rgba(229, 229, 229, 0.2);
   --font: "Roboto", Helvetica, Arial, sans-serif;
-}
-
-body {
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-p {
-  font-family: var(--font);
-  color: #fff;
-  font-size: 13px;
-  font-weight: 300;
+  --box-shadow: rgba(0, 0, 0, 0.4);
 }
 
 h4 {
@@ -25,8 +13,131 @@ h4 {
   text-transform: uppercase;
 }
 
-div {
-  width: auto;
-  padding: 0;
+.Card {
   margin: 0 auto;
+  margin-bottom: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Gallery .row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.Gallery div.image-card {
+  background-color: var(--card-color);
+  width: 550px;
+  height: auto;
+  padding: 15px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  box-shadow: 3px 3px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 812px) {
+  .Gallery div.image-card {
+    width: 320px;
+    height: auto;
+    display: block;
+    flex-direction: column;
+    margin-left: 0px;
+    padding: 10px;
+  }
+}
+
+.Gallery img {
+  width: 500px;
+  height: 300px;
+  border-radius: 20px;
+  margin: 10px auto;
+}
+
+.Gallery p,
+#desc {
+  font-family: var(--font);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 300;
+  width: 490px;
+  margin-left: 15px;
+  text-align: left;
+}
+
+.Gallery h2 {
+  text-align: left;
+  padding: 0;
+  margin-left: 15px;
+}
+
+.Gallery h3 {
+  font-size: 14px;
+  text-align: left;
+  padding: 0;
+  margin-left: 15px;
+}
+
+.Gallery .fa-heart {
+  color: #fff;
+  float: right;
+  margin-right: -470px;
+  margin-bottom: -20px;
+  padding: 0;
+}
+
+#copyright {
+  width: 70%;
+}
+
+@media screen and (max-width: 812px) {
+  .Gallery {
+    margin: 0 auto;
+  }
+
+  .Gallery img {
+    width: 100%;
+    height: auto;
+    margin-top: 0px;
+  }
+
+  .Gallery p {
+    width: auto;
+  }
+
+  #copyright {
+    width: auto;
+    height: auto;
+    margin-left: 3px;
+    margin-top: 0px;
+    padding: 0;
+  }
+
+  #desc {
+    display: none;
+  }
+
+  .Gallery h2 {
+    margin-left: 3px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    font-size: 19px;
+  }
+
+  .Gallery h3 {
+    margin: 0 auto;
+    margin-left: 3px;
+  }
+
+  .Gallery .fa-heart {
+    float: right;
+    margin-right: 3px;
+    margin-top: 5px;
+  }
 }
