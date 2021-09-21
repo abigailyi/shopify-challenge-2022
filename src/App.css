@@ -23,6 +23,7 @@ body {
 
 .App-link {
   color: rgb(234, 143, 181);
+  text-decoration: none;
 }
 
 .App-link:hover {
@@ -97,6 +98,10 @@ h3 {
   font-size: 14px;
   color: #fff;
   letter-spacing: 2px;
+}
+
+.App footer {
+  margin: 30px 0px;
 }
 
 @media screen and (max-width: 812px) {
