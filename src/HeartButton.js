@@ -19,9 +19,9 @@ class HeartButton extends Component {
           onClick={() => this.toggle()}
         >
           {this.state.liked === false ? (
-            <i className="far fa-heart fa-2x"></i>
+            <i className="far fa-heart fa-lg"></i>
           ) : (
-            <i className="fas fa-heart fa-2x"></i>
+            <i className="fas fa-heart fa-lg"></i>
           )}
         </div>
       </div>
