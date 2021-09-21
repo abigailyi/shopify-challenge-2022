@@ -35,7 +35,6 @@ export default function Gallery() {
   }
 
   if (loaded) {
-    console.log(images);
     return (
       <div className="Gallery">
         {images
@@ -98,8 +97,6 @@ export default function Gallery() {
     let startDay = formatDate(date);
     const lastD = new Date(year, month, day - 9); // PLUS 1 DAY
     let endDay = formatDate(lastD);
-    console.log(startDay);
-    console.log(endDay);
 
     let apiKey = `sBw9DFbr77y8J3hDVajYsX7g7aTfbeLtNWLcQXof`;
     let apiUrl = `https://api.nasa.gov/planetary/apod?api_key=${apiKey}&start_date=${endDay}&end_date=${startDay}`;
