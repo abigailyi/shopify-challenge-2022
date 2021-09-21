@@ -22,7 +22,12 @@ body {
 }
 
 .App-link {
-  color: rgb(151, 113, 255);
+  color: rgb(234, 143, 181);
+}
+
+.App-link:hover {
+  color: rgb(250, 194, 217);
+  font-weight: 500;
 }
 
 .App-icon {
