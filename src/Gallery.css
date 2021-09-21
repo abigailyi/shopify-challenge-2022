@@ -42,17 +42,6 @@ h4 {
   box-shadow: 3px 3px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-@media screen and (max-width: 812px) {
-  .Gallery div.image-card {
-    width: 320px;
-    height: auto;
-    display: block;
-    flex-direction: column;
-    margin-left: 0px;
-    padding: 10px;
-  }
-}
-
 .Gallery img {
   width: 500px;
   height: 300px;
@@ -101,6 +90,15 @@ h4 {
     margin: 0 auto;
   }
 
+  .Gallery div.image-card {
+    width: 320px;
+    height: auto;
+    display: block;
+    flex-direction: column;
+    margin-left: 0px;
+    padding: 10px;
+  }
+
   .Gallery img {
     width: 100%;
     height: auto;
@@ -112,7 +110,7 @@ h4 {
   }
 
   #copyright {
-    width: auto;
+    width: 250px;
     height: auto;
     margin-left: 3px;
     margin-top: 0px;
@@ -139,5 +137,14 @@ h4 {
     float: right;
     margin-right: 3px;
     margin-top: 5px;
+  }
+
+  .Gallery .col {
+    width: 300px;
+  }
+
+  .Gallery .row {
+    margin-left: 0;
+    margin-right: 0;
   }
 }

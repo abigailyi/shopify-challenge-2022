@@ -5,7 +5,7 @@
 }
 
 body {
-  background-image: url("./nebula-half 1.png");
+  background-image: url("./neb-bg-half.png");
   background-color: var(--bg-color);
   background-position: fixed;
   background-size: auto;
@@ -127,5 +127,17 @@ h3 {
   .App .header-text {
     font-size: 12px;
     width: 80%;
+  }
+}
+
+@media all and (min-width: 1080px) {
+  body {
+    background-image: url("./neb-bg.png");
+  }
+}
+
+@media all and (min-width: 1920px) {
+  body {
+    background-image: url("./neb-bg-full.png");
   }
 }

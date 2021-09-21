@@ -7,7 +7,6 @@ import ReactPlayer from "react-player";
 import LikeButton from "./LikeButton";
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import Loader from "react-loader-spinner";
-import HeartButton from "./HeartButton";
 
 export default function Gallery() {
   let [loaded, setLoaded] = useState(false);
@@ -53,10 +52,10 @@ export default function Gallery() {
                       <br />
                       <p id="desc">{daily.explanation}</p>
                       <br />
-                      <span>
-                        <HeartButton />
-                      </span>
-                      <p id="copyright">Copyright: {daily.copyright}</p>
+                      <div className="col">
+                        <p id="copyright">Copyright: {daily.copyright}</p>
+                        <LikeButton />
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -77,8 +76,10 @@ export default function Gallery() {
                       <br />
                       <p id="desc">{daily.explanation}</p>
                       <br />
-                      <LikeButton />
-                      <p id="copyright">Copyright: {daily.copyright}</p>
+                      <div className="col">
+                        <p id="copyright">Copyright: {daily.copyright}</p>
+                        <LikeButton />
+                      </div>
                     </div>
                   </div>
                 </div>

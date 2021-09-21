@@ -15,7 +15,7 @@ class LikeButton extends Component {
       <div className="LikeButton">
         <div
           className="container"
-          style={{ border: "none", width: "15%" }}
+          style={{ border: "none", width: "15%", height: "15%" }}
           onClick={() => this.toggle()}
         >
           {this.state.liked === false ? (
