@@ -42,7 +42,7 @@ export default function App() {
           <a
             href="https://apod.nasa.gov/apod/astropix.html"
             target="_blank"
-            rel="norefferer noopener"
+            rel="noreferrer noopener"
             alt="NASA's Astronomy Photo of the Day webpage"
             className="App-link"
           >
