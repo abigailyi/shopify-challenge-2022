@@ -1,9 +1,11 @@
 import React, { Component } from "react";
-import "./LikeButton.css";
+import "./LikeIcon.css";
 
-class LikeButton extends Component {
+class LikeIcon extends Component {
   state = { liked: false };
 
+  // Toggles between true/false liked state triggered
+  // by onClick event listener
   toggle = () => {
     let localLiked = this.state.liked;
     localLiked = !localLiked;
@@ -29,4 +31,4 @@ class LikeButton extends Component {
   }
 }
 
-export default LikeButton;
+export default LikeIcon;

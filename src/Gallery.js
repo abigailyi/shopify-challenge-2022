@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-// import Loader from "react-loader-spinner";
-import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import "./Gallery.css";
+import LikeIcon from "./LikeIcon";
 import ReactPlayer from "react-player";
-import LikeButton from "./LikeButton";
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import Loader from "react-loader-spinner";
 
@@ -21,6 +19,7 @@ export default function Gallery() {
     setLoaded(false);
   }, []);
 
+  // Format the date to yyyy-MM-dd for API's fields
   function formatDate(date) {
     var d = new Date(date),
       month = "" + (d.getMonth() + 1),
@@ -33,6 +32,8 @@ export default function Gallery() {
     return [year, month, day].join("-");
   }
 
+  // Mapping out API's response array in reverse to order from most recent
+  // to least recent. Added if/else statement to format HTML for video formats
   if (loaded) {
     return (
       <div className="Gallery">
@@ -54,7 +55,7 @@ export default function Gallery() {
                       <br />
                       <div className="col">
                         <p id="copyright">Copyright: {daily.copyright}</p>
-                        <LikeButton />
+                        <LikeIcon />
                       </div>
                     </div>
                   </div>
@@ -78,7 +79,7 @@ export default function Gallery() {
                       <br />
                       <div className="col">
                         <p id="copyright">Copyright: {daily.copyright}</p>
-                        <LikeButton />
+                        <LikeIcon />
                       </div>
                     </div>
                   </div>
@@ -89,6 +90,7 @@ export default function Gallery() {
       </div>
     );
   } else {
+    // Pulling latest 10 days of photos from APOD API
     const date = new Date();
 
     const year = date.getFullYear();
@@ -96,7 +98,7 @@ export default function Gallery() {
     const day = date.getDate();
 
     let startDay = formatDate(date);
-    const lastD = new Date(year, month, day - 9); // PLUS 1 DAY
+    const lastD = new Date(year, month, day - 9);
     let endDay = formatDate(lastD);
 
     let apiKey = `sBw9DFbr77y8J3hDVajYsX7g7aTfbeLtNWLcQXof`;
@@ -110,7 +112,7 @@ export default function Gallery() {
           color="#FFFFFF"
           height={100}
           width={100}
-          timeout={5000} //5 secs
+          timeout={7000} // 7 secs
         />
         <h3>LOADING ...</h3>
       </div>
